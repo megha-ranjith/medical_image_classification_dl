@@ -7,10 +7,7 @@
 
 ## Overview
 
-This project presents a **lightweight, confidence-aware deep learning framework** for medical image classification, designed specifically for **resource-constrained environments**.  
-The system integrates **deep feature extraction**, **classical machine learning ensembles**, and an **entropy-based rejection mechanism** to improve reliability and trustworthiness in medical decision support systems.
-
-The project is implemented as part of the **MTech Computer Science and Engineering** curriculum and is aligned with core Machine Learning and Deep Learning concepts.
+This project presents a confidence-aware medical image classification framework that combines deep learning–based feature extraction with classical machine learning ensembles. Chest X-ray images are processed using a pretrained CNN to extract discriminative features, which are reduced using PCA and classified through an ensemble of Logistic Regression, Support Vector Machine, and Gradient Boosting models. An entropy-based rejection mechanism is integrated to abstain from low-confidence predictions, improving reliability in clinical decision support. The system is evaluated using stratified 5-fold cross-validation and ROC analysis, and is designed to operate efficiently on CPU-only environments.
 
 ---
 
